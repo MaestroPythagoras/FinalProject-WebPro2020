@@ -14,13 +14,13 @@ const App = () => {
             <nav>
           <ul>
             <li>
-              <Link to="/">Global</Link>
+              <Link to="/">[ 1 ] GLOBAL</Link>
             </li>
             <li>
-              <Link to="/indonesia">Indonesia</Link>
+              <Link to="/indonesia">[ 2 ] INDONESIA</Link>
             </li>
             <li>
-              <Link to="/provinsi">Provinsi</Link>
+              <Link to="/provinsi">[ 3 ] PROVINSI</Link>
             </li>
           </ul>
         </nav>

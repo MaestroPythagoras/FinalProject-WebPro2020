@@ -1,6 +1,6 @@
 import React, { useEffect,useState } from "react";
-import Box from "../Component/Box";
-import "../Component/Box/Box.css";
+import Box from "../Component/Box/box_provinsi.js";
+import "../Component/Box/tabel_provinsi.css";
 import axios from 'axios';
 
 const Provinsi = () => {
@@ -15,7 +15,7 @@ const Provinsi = () => {
         return(
             <>
             <div>
-    <h3>✎Halaman untuk Update : Provinsi</h3>
+    <h3>[ 3 ] ✎ Halaman untuk Update Data Kasus Covid-19 di • PROVINSI</h3>
         <table>
     <tr bgcolor ="yellow">
         <th>Provinsi</th>

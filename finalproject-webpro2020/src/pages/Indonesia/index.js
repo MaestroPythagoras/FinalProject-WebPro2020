@@ -1,11 +1,29 @@
-import React from 'react'
+import React, { useEffect,useState } from "react";
+import Box from "../Component/Box/box_indonesia.js";
+import "../Component/Box/tabel_indonesia.css";
+import axios from 'axios';
 
 const Indonesia = () => {
-    return (
-        <div>
-            <h1>PAGE INDONESIA</h1>
-        </div>
-    )
-}
+        const [dataindonesia,setdataindonesia] = useState([]);
+    
+        useEffect(() => {
+        axios
+            .get("https://indonesia-covid-19.mathdro.id/api")
+            .then((response) => setdataindonesia(response.data.data));
+        }, []);
 
-export default Indonesia
+        return(
+            <>
+            {dataindonesia.map((item) => {
+                return(
+                    <Box 
+                    jumlahKasus={item.jumlahKasus} 
+                    meninggal={item.meninggal}
+                    sembuh={item.sembuh} 
+                 />
+                );
+            })}
+        </>
+        );
+    };
+export default Indonesia;

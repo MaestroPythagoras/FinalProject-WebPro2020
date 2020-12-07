@@ -1,8 +1,8 @@
 import React from 'react';
-import "./Box.css";
+import "./tabel_provinsi.css";
 import NumberFormat from 'react-number-format';
 
-const Box = ({provinsi, kasusPosi, kasusSemb, kasusMeni}) => {
+const box_provinsi = ({provinsi, kasusPosi, kasusSemb, kasusMeni}) => {
     return (
         <>
     <table>
@@ -17,4 +17,4 @@ const Box = ({provinsi, kasusPosi, kasusSemb, kasusMeni}) => {
     );
 };
 
-export default Box;
+export default box_provinsi;

@@ -1,11 +1,29 @@
-import React from 'react'
+import React, { useEffect,useState } from "react";
+import Box from "../Component/Box/box_global.js";
+import "../Component/Box/tabel.global.css";
+import axios from 'axios';
 
 const Global = () => {
-    return (
-        <div>
-            <h1>PAGE GLOBAL</h1>
-        </div>
-    )
-}
+        const [dataglobal,setdataglobal] = useState([]);
+    
+        useEffect(() => {
+        axios
+            .get("https://covid19.mathdro.id/api")
+            .then((response) => setdataglobal(response.data));
+        }, []);
 
-export default Global
+        return(
+            <>
+            {dataglobal.map((item) => {
+                return(
+                    <Box 
+                    confirmed={item.confirmed} 
+                    deaths={item.deaths}
+                    recovered={item.recovered} 
+                 />
+                );
+            })}
+        </>
+        );
+    };
+export default Global;
