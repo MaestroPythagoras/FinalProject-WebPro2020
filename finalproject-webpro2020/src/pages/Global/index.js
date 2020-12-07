@@ -8,18 +8,21 @@ const Global = () => {
     
         useEffect(() => {
         axios
-            .get("https://covid19.mathdro.id/api")
+            .get("https://api.covid19api.com/world/total")
             .then((response) => setdataglobal(response.data));
         }, []);
-
+    
         return(
             <>
+    <div>
+    <h3>[ 1 ] ✎ Halaman untuk Update Data Kasus Covid-19 di • GLOBAL</h3>
+    </div>
             {dataglobal.map((item) => {
                 return(
                     <Box 
-                    confirmed={item.confirmed} 
-                    deaths={item.deaths}
-                    recovered={item.recovered} 
+                    TotalConfirmed={item.TotalConfirmed} 
+                    TotalRecovered={item.TotalRecovered} 
+                    TotalDeaths={item.TotalDeaths}
                  />
                 );
             })}

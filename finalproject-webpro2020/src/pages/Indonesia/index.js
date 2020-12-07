@@ -11,15 +11,18 @@ const Indonesia = () => {
             .get("https://indonesia-covid-19.mathdro.id/api")
             .then((response) => setdataindonesia(response.data.data));
         }, []);
-
+    
         return(
             <>
+    <div>
+    <h3>[ 2 ] ✎ Halaman untuk Update Data Kasus Covid-19 di • INDONESIA</h3>
+    </div>
             {dataindonesia.map((item) => {
                 return(
                     <Box 
                     jumlahKasus={item.jumlahKasus} 
-                    meninggal={item.meninggal}
                     sembuh={item.sembuh} 
+                    meninggal={item.meninggal}
                  />
                 );
             })}

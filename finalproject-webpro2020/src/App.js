@@ -8,7 +8,7 @@ import {Global,Indonesia,Provinsi} from "./pages";
 const App = () => {
     return (
         <Router>
-          <h1>⇲ COVID-19 Tracker ⇱</h1>
+          <h1>⇲ Covid-19 Tracker ⇱</h1>
           <h4>by: Maestro Pythagoras | S11910046</h4>
             <div>
             <nav>
