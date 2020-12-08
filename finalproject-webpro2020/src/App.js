@@ -15,13 +15,13 @@ const App = () => {
             <nav>
           <ul>
             <li>
-              <Link to="/">[ 1 ] GLOBAL ❌</Link>
+              <Link to="/global">[ 1 ] GLOBAL ❌</Link>
             </li>
             <li>
               <Link to="/indonesia">[ 2 ] INDONESIA ❌</Link>
             </li>
             <li>
-              <Link to="/provinsi">[ 3 ] PROVINSI ✔️</Link>
+              <Link to="/">[ 3 ] PROVINSI ✔️</Link>
             </li>
           </ul>
         </nav>
@@ -29,10 +29,10 @@ const App = () => {
                 <Route path="/indonesia">
                     <Indonesia />
                 </Route>
-                <Route path="/Provinsi">
+                <Route path="/">
                     <Provinsi />
                 </Route>
-                <Route path="/">
+                <Route path="/global">
                     <Global />
                 </Route>
             </Switch>
