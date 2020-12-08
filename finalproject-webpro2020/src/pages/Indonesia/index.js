@@ -8,7 +8,7 @@ const Indonesia = () => {
     
         useEffect(() => {
         axios
-            .get("https://indonesia-covid-19.mathdro.id/api")
+            .get("https://lintangwisesa.github.io/Indonesia-Covid19-Maps/data/indonesia.json")
             .then((response) => setdataindonesia(response.data.data));
         }, []);
     
@@ -20,9 +20,9 @@ const Indonesia = () => {
             {dataindonesia.map((item) => {
                 return(
                     <Box 
-                    jumlahKasus={item.jumlahKasus} 
-                    sembuh={item.sembuh} 
-                    meninggal={item.meninggal}
+                    Confirmed={item.Confirmed} 
+                    Recovered={item.Recovered} 
+                    Deaths={item.Deaths}
                  />
                 );
             })}

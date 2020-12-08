@@ -15,7 +15,7 @@ const Provinsi = () => {
         return(
             <>
             <div>
-    <h3>[ 3 ] ✎ Halaman untuk Update Data Kasus Covid-19 di • PROVINSI</h3>
+    <h3>[ 3 ] ✎ Halaman untuk Update Data Kasus Covid-19 di • PROVINSI ✔️</h3>
         <table>
     <tr bgcolor ="yellow">
         <th>Provinsi</th>

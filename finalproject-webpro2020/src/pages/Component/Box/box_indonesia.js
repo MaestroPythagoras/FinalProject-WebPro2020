@@ -1,13 +1,13 @@
 import React from 'react';
 import "./tabel_indonesia.css";
-import NumberFormat from 'react-number-format';
+// import NumberFormat from 'react-number-format';
 
-const box_indonesia = ({jumlahKasus, sembuh, meninggal}) => {
+const box_indonesia = ({Confirmed, Recovered, Deaths}) => {
     return (
         <>
-        <p>{jumlahKasus}</p>
-        <p>{sembuh}</p>
-        <p>{meninggal}</p>
+        <p>{Confirmed}</p>
+        <p>{Recovered}</p>
+        <p>{Deaths}</p>
         </>
     );
 };

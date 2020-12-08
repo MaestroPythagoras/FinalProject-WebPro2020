@@ -9,18 +9,19 @@ const App = () => {
     return (
         <Router>
           <h1>⇲ Covid-19 Tracker ⇱</h1>
-          <h4>by: Maestro Pythagoras | S11910046</h4>
+          <h4>by : Maestro Pythagoras | S11910046</h4>
+          <h5>Nb • ✔️: Program Sudah Berjalan • ❌: Program Belum Berjalan</h5>
             <div>
             <nav>
           <ul>
             <li>
-              <Link to="/">[ 1 ] GLOBAL</Link>
+              <Link to="/">[ 1 ] GLOBAL ❌</Link>
             </li>
             <li>
-              <Link to="/indonesia">[ 2 ] INDONESIA</Link>
+              <Link to="/indonesia">[ 2 ] INDONESIA ❌</Link>
             </li>
             <li>
-              <Link to="/provinsi">[ 3 ] PROVINSI</Link>
+              <Link to="/provinsi">[ 3 ] PROVINSI ✔️</Link>
             </li>
           </ul>
         </nav>
